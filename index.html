@@ -5,7 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meghan Black</title>
     <style>
-        img {
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+            background-color: #fffbf7;
+            display: block;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .light-theme {
+            background-color: #fffbf7;
+            color: #545454;
+        }
+        .dark-theme {
+            background-color: #545454;
+            color: #fffbf7;
+        }
+        .content {
+            max-width: 1200px;   /* keeps text line length readable on big screens */
+            margin: 0 auto;      /* centers it horizontally */
+            padding: 1rem 2rem;  /* ensures spacing on smaller devices */
+        }
+        div.content-header img {
             width: 50%;
             height: auto;
         }
@@ -34,7 +90,7 @@
         }
         section {
             padding: 2rem;
-            max-width: 800px;
+            max-width: 100%;
             margin: auto;
         }
         footer {
@@ -46,36 +102,73 @@
             bottom: 0;
             width: 100%;
         }
+        .desc {
+            text-align: center;
+            color: #545454;
+            background-color: #fffbf7;
+            padding: 0.5rem;
+            font-size: medium;
+        }
     </style>
 </head>
 <body>
-    <header>
+    <header class="dark-theme">
+        <div class="content-header">
         <img src="Header.png" alt="Meghan Black">
+        </div>
         <nav>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <section id="about">
+
+    <section class="light-theme" id="about">
+        <div class="content">
+            <h1>Meghan Black</h1>
+            <p>Welcome to my personal webpage! Here you can find information about me, my projects, and how to contact me.</p>
         <h2>About Me</h2>
         <p>Hello! I'm a passionate developer with experience in building web applications. I love solving problems and learning new technologies.</p>
+        </div>
     </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Project 1:</strong> A web application for task management.</li>
-            <li><strong>Project 2:</strong> A portfolio website showcasing my work.</li>
-            <li><strong>Project 3:</strong> A blog platform for sharing ideas.</li>
-        </ul>
-    </section>
-    <section id="contact">
+
+    <section class="dark-theme" id="projects">
+        <div class="content clearfix">
+          <h2>Projects</h2>
+      
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="Yolk parts.jpeg">
+                <img src="Yolk parts.jpeg" alt="Plane Yolk parts">
+              </a>
+              <div class="desc">Yolk Handle parts</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="chime machine cad.jpg">
+                <img src="chime machine cad.jpg" alt="Chime machine cad">
+              </a>
+              <div class="desc">Robotic Chime Machine</div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+
+    <section class="light-theme" id="contact">
+        <div class="content">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:mcb4457@rit.edu">mcb4457@rit.edu</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/meghan-black-mechanical-engineer" target="_blank">linkedin.com/in/meghan-black-mechanical-engineer</a></p>
+        </div>
     </section>
+
     <footer>
         <p>&copy; 2025 Meghan Black</p>
     </footer>
+
 </body>
 </html>
