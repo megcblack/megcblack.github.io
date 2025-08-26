@@ -1716,6 +1716,15 @@ a {
     background-color: #6E7271 !important;
     color: #E2E2E2 !important;
 }
+
+.dim-gray-light {
+    color: #6E7271 !important;
+    background-color: #E2E2E2 !important;
+}
+.dark-gray-light {
+    background-color: #fff !important;
+    color: #616161 !important
+}
 .slate-gray {
     background-color: #384D48 !important;
     color: #E2E2E2 !important
