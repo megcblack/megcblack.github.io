@@ -1326,23 +1326,23 @@ a {
 }
 
 .w3-small {
-    font-size: 400 !important
+    font-size: 12px !important
 }
 
 .w3-medium {
-    font-size: 500 !important
+    font-size: 15px !important
 }
 
 .w3-large {
-    font-size: 600 !important
+    font-size: 18px !important
 }
 
 .w3-xlarge {
-    font-size: 700 !important
+    font-size: 24px !important
 }
 
 .w3-xxlarge {
-    font-size: 800 !important
+    font-size: 36px !important
 }
 
 .w3-xxxlarge {
