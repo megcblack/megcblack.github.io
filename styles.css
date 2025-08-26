@@ -1322,7 +1322,7 @@ a {
 }
 
 .w3-tiny {
-    font-size: 300 !important
+    font-size: 10px !important
 }
 
 .w3-small {
@@ -1693,10 +1693,27 @@ a {
     background-color: #ffffcc !important
 }
 
+.platinum {
+    color: #E2E2E2 !important;
+    background-color: #140d00 !important;
+}
+
+.dim-gray-text {
+    color: #6E7271 !important;
+}
 .w3-pale-blue,
 .w3-hover-pale-blue:hover {
     color: #000 !important;
     background-color: #ddffff !important
+}
+
+.dim-gray {
+    background-color: #6E7271 !important;
+    color: #E2E2E2 !important;
+}
+.slate-gray {
+    background-color: #384D48 !important;
+    color: #E2E2E2 !important
 }
 
 .w3-text-amber,
