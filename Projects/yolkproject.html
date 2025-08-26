@@ -1,73 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-    <style>
-    .light-theme {
-        background-color: #fffbf7;
-        color: #545454;
-    }
-    .dark-theme {
-        background-color: #545454;
-        color: #fffbf7;
-    }
-    .content {
-        max-width: 1200px;   /* keeps text line length readable on big screens */
-        margin: 0 auto;      /* centers it horizontally */
-        padding: 1rem 2rem;  /* ensures spacing on smaller devices */
-    }
-    div.content-header img {
-        width: 50%;
-        height: auto;
-    }
-    body {
-        font-weight: 500;
-        font-family: Poppins, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #545454;
-        color: #fffbf7
-    }
-    header {
-        background-color: #545454;
-        color: #fffbf7;
-        padding: 1rem 0;
-        text-align: center;
-        font-family: Poppins, sans-serif;
-        font-weight: 700;
-    }
-    nav {
-        margin: 1rem 0;
-    }
-    nav a {
-        color: #fffbf7;
-        text-decoration: none;
-        margin: 0 1rem;
-    }
-    section {
-        padding: 2rem;
-        max-width: 100%;
-        margin: auto;
-    }
-    footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 1rem 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
-    .desc {
-        text-align: center;
-        color: #545454;
-        background-color: #fffbf7;
-        padding: 0.5rem;
-        font-size: medium;
-    }
+<html>
+<title>Meghan Black - Yolk Covers</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body,h1,h2,h3,h4,h5,h6 {font-family: Poppins, sans-serif}
 </style>
-<Header>
-    <title>Yolk Project</title>
-</Header>
-<body>
-    <h1>Yolk Project</h1>
+
+<body class="dark-gray-light w3-content" style="max-width:1600px">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse slate-gray w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-large w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4><b>Meghan Black</b></h4>
+    <p class="dim-gray-text w3-tiny">Based on template by W3.CSS</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Portfolio</a> 
+    <a href="../about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>About me</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Contact</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+        <h1><b>Yolk Covers</b></h1>
+        <h4>Personal Project</h4>
+    </div>
+
+</div>
+
 </body>
+
 </html>
