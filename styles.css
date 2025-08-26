@@ -1698,6 +1698,11 @@ a {
     background-color: #0a0700 !important;
 }
 
+.platinum-light {
+    background-color: #E2E2E2 !important;
+    color: #0a0700 !important;
+}
+
 .dim-gray-text {
     color: #6E7271 !important;
 }
@@ -2010,4 +2015,8 @@ a {
 .w3-border-pale-blue,
 .w3-hover-border-pale-blue:hover {
     border-color: #e7ffff !important
+}
+
+.no-underline-link {
+    text-decoration: none;
 }
